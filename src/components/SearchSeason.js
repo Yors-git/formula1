@@ -2,15 +2,17 @@ import React from 'react';
 
 
 class SearchSeason extends React.Component {
-    state = { season: '' }
+    state = { season: '', change: null }
 
     onInputChange = (event) => {
         this.setState({ season: event.target.value })
     }
     handleSubmit = (event) => {
         event.preventDefault()
-        this.props.getSeason(this.state.season)
-        this.props.getResults(this.state.season)
+        this.setState({change: true})
+        this.props.getSeason(this.state.season, this.state.change)
+        
+        // this.props.getResults(this.state.season)
     }
 
     render() {
