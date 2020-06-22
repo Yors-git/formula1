@@ -1,3 +1,4 @@
+import './itemHeight.css';
 import React from 'react';
 import SearchSeason from './SearchSeason';
 import DisplayRaces from './DisplayRaces';
@@ -19,7 +20,6 @@ class App extends React.Component{
                 const response = await axios.get(`https://ergast.com/api/f1/${season}/${i}/results.json`);
                 responses.push(response)
             }
-        // this.setState({results: response.data.MRData.RaceTable.Races[0].Results[0].Driver})
             this.setState({results: responses})
             this.setState({change: false})
             
@@ -32,11 +32,13 @@ class App extends React.Component{
         return (
             <div className="ui container">
                 <SearchSeason getSeason={this.getSeason} />
-                <div className="ui grid">
-                    <DisplayRaces className="four wide column" races={this.state.races} />
-                    <GetRaceResults className="twelve wide column" results={this.state.results} change={this.state.change}/>
-                </div>
                 
+                <div className="content ui container">
+                <div className="ui grid">
+                    <DisplayRaces className="three wide column" races={this.state.races} />
+                    <GetRaceResults className="thirteen wide column" results={this.state.results} change={this.state.change}/>
+                </div>
+                </div>    
             </div>
         )
     }

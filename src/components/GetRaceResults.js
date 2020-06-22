@@ -3,6 +3,7 @@ import Winner from './Winner';
 import SecondPlace from './SecondPlace';
 import ThirdPlace from './ThirdPlace';
 
+
 const GetRaceResults = ({results, change}) => {
 
     if( change === true){
@@ -21,6 +22,7 @@ const GetRaceResults = ({results, change}) => {
     return (
     
         <div className="ui grid">
+        <div className="row">
             <div className="five wide column ui relaxed divided list">
             {listOfWinners}
             </div>
@@ -30,6 +32,7 @@ const GetRaceResults = ({results, change}) => {
             <div className="five wide column ui relaxed divided list">
             {listOfThird}
             </div>
+        </div>
         </div>
         
     )
