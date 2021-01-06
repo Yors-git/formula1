@@ -11,7 +11,6 @@ class App extends React.Component{
     getSeason = async (season, change) => {
         try {
             this.setState({change: change})
-            console.log(this.state.change)
             const response1 = await axios.get(`https://ergast.com/api/f1/${season}/results/1.json`);
             this.setState({races: response1.data.MRData.RaceTable.Races})
             console.log(response1)
@@ -30,13 +29,12 @@ class App extends React.Component{
 
     render(){
         return (
-            <div className="ui container">
-                <SearchSeason getSeason={this.getSeason} />
-                
+            <div className="ui container top-bar">
+                <SearchSeason getSeason={this.getSeason}/>
                 <div className="content ui container">
-                <div className="ui grid">
-                    <DisplayRaces className="three wide column" races={this.state.races} />
-                    <GetRaceResults className="thirteen wide column" results={this.state.results} change={this.state.change}/>
+                <div className="ui grid" style={{display: "flex", justifyContent: "center"}}>
+                    <DisplayRaces className="two wide column" races={this.state.races} />
+                    <GetRaceResults className="fourteen wide column" results={this.state.results} change={this.state.change} races={this.state.races}/>
                 </div>
                 </div>    
             </div>

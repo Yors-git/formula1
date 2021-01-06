@@ -1,6 +1,10 @@
+.top-bar {
+    margin-top: 20px;
+}
+
 .height1 {
     height: 75px;
-    width: 210px;
+    width: 100%;
 }
 
 .content {

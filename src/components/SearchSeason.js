@@ -11,8 +11,6 @@ class SearchSeason extends React.Component {
         event.preventDefault()
         this.setState({change: true})
         this.props.getSeason(this.state.season, this.state.change)
-        
-        // this.props.getResults(this.state.season)
     }
 
     render() {

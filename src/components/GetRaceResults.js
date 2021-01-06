@@ -4,11 +4,16 @@ import SecondPlace from './SecondPlace';
 import ThirdPlace from './ThirdPlace';
 
 
-const GetRaceResults = ({results, change}) => {
+const GetRaceResults = ({results, change, races}) => {
 
-    if( change === true){
+    if(change === null){
+        console.log(change)
+        return <div>Enter a Season Year</div>
+    } 
+    if(change === true){
+        console.log(races)
         return <div>Loading...</div>
-    }  
+    } 
     const listOfWinners = results.map(result =>{
         return <Winner driver={result.data.MRData.RaceTable.Races[0].Results[0].Driver} />
     })
