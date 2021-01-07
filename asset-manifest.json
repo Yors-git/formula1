@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/formula1/src/index.js/static/css/main.ce371bda.chunk.css",
-    "main.js": "/formula1/src/index.js/static/js/main.894d9072.chunk.js",
-    "main.js.map": "/formula1/src/index.js/static/js/main.894d9072.chunk.js.map",
-    "runtime-main.js": "/formula1/src/index.js/static/js/runtime-main.9d21bd65.js",
-    "runtime-main.js.map": "/formula1/src/index.js/static/js/runtime-main.9d21bd65.js.map",
-    "static/js/2.3b000a22.chunk.js": "/formula1/src/index.js/static/js/2.3b000a22.chunk.js",
-    "static/js/2.3b000a22.chunk.js.map": "/formula1/src/index.js/static/js/2.3b000a22.chunk.js.map",
-    "index.html": "/formula1/src/index.js/index.html",
-    "precache-manifest.27bec2fee3c81fff077b99aa371f10b7.js": "/formula1/src/index.js/precache-manifest.27bec2fee3c81fff077b99aa371f10b7.js",
-    "service-worker.js": "/formula1/src/index.js/service-worker.js",
-    "static/css/main.ce371bda.chunk.css.map": "/formula1/src/index.js/static/css/main.ce371bda.chunk.css.map",
-    "static/js/2.3b000a22.chunk.js.LICENSE.txt": "/formula1/src/index.js/static/js/2.3b000a22.chunk.js.LICENSE.txt"
+    "main.css": "/formula1/public/index.html/static/css/main.ce371bda.chunk.css",
+    "main.js": "/formula1/public/index.html/static/js/main.894d9072.chunk.js",
+    "main.js.map": "/formula1/public/index.html/static/js/main.894d9072.chunk.js.map",
+    "runtime-main.js": "/formula1/public/index.html/static/js/runtime-main.08cc4581.js",
+    "runtime-main.js.map": "/formula1/public/index.html/static/js/runtime-main.08cc4581.js.map",
+    "static/js/2.3b000a22.chunk.js": "/formula1/public/index.html/static/js/2.3b000a22.chunk.js",
+    "static/js/2.3b000a22.chunk.js.map": "/formula1/public/index.html/static/js/2.3b000a22.chunk.js.map",
+    "index.html": "/formula1/public/index.html/index.html",
+    "precache-manifest.a3ad5dc7cda113400f1455e39bf19966.js": "/formula1/public/index.html/precache-manifest.a3ad5dc7cda113400f1455e39bf19966.js",
+    "service-worker.js": "/formula1/public/index.html/service-worker.js",
+    "static/css/main.ce371bda.chunk.css.map": "/formula1/public/index.html/static/css/main.ce371bda.chunk.css.map",
+    "static/js/2.3b000a22.chunk.js.LICENSE.txt": "/formula1/public/index.html/static/js/2.3b000a22.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.9d21bd65.js",
+    "static/js/runtime-main.08cc4581.js",
     "static/js/2.3b000a22.chunk.js",
     "static/css/main.ce371bda.chunk.css",
     "static/js/main.894d9072.chunk.js"
